@@ -1,5 +1,7 @@
 import { StyledHomeSample, Container, Inner, Column, Title, Decor, Image } from './styles/homeSample.styled';
 import { useState, useEffect } from 'react';
+import waves from '../../../../assets/images/waves.png'
+import sample from '../../../../assets/images/sample.png'
 
 const HomeSample = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -20,7 +22,7 @@ const HomeSample = () => {
                 <Inner>
                     <Column>
                         <Image 
-                            src='src/assets/images/waves.png'
+                            src={waves}
                             $width={screenWidth < 1085 ? '30px' : '50px'}
                             $marginBottom={screenWidth < 1085 ? '6px' : '13px'}
                         />
@@ -29,7 +31,7 @@ const HomeSample = () => {
                         </Title>
                     </Column>
                     <Image
-                        src="src/assets/images/sample.png"
+                        src={sample}
                         $width={screenWidth < 1085 ? '298px' : '513px'}
                     />
                 </Inner>

@@ -1,6 +1,7 @@
 import { StyledHomeAdvantages, Container, Inner, Column, Image, Title, Decor } from './styles/homeAdvantages.styled';
 import { useState, useEffect } from 'react';
-
+import waves from '../../../../assets/images/waves.png'
+import advantages from '../../../../assets/images/advantages.png'
 const HomeAdvantages = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -20,7 +21,7 @@ const HomeAdvantages = () => {
                 <Inner>
                     <Column>
                         <Image 
-                            src='src/assets/images/waves.png' 
+                            src={waves}
                             $marginBottom={screenWidth < 1085 ? '6px' : '13px'}
                             $width={screenWidth < 1085 ? '30px' : '50px'}
                         />
@@ -29,7 +30,7 @@ const HomeAdvantages = () => {
                         </Title>
                     </Column>
                     <Image 
-                        src='src/assets/images/advantages.png'
+                        src={advantages}
                         $position='center'
                         $width={screenWidth < 1085 ? '280px' : '570px'}
                     />

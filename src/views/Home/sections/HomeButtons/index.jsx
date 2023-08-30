@@ -1,22 +1,25 @@
 import {StyledHomeButtons, Image } from "./styles/homeButtons.styled";
 import Button from "../../../../components/Button";
+import appleStore from '../../../../assets/images/appleStore.png';
+import googleStore from '../../../../assets/images/googlePlay.png'
+import android from '../../../../assets/images/android.png';
 
 const buttons = [
     {
         title: 'App Store',
-        imgPath: 'src/assets/images/appleStore.png',
+        imgPath: appleStore,
         width: 'large',
         link: '#',
     },
     {
         title: 'Google Play',
-        imgPath: 'src/assets/images/googlePlay.png',
+        imgPath: googleStore,
         width: 'middle',
         link: '#',
     },
     {
         title: 'APK 7.0+',
-        imgPath: 'src/assets/images/android.png',
+        imgPath: android,
         width: 'small',
         link: '#',
     }

@@ -1,6 +1,6 @@
 import { StyledPresentation, Column, Text, Thumb, Progress, Row, Image, } from "./styles/presentation.styles";
 import { useState, useEffect } from "react";
-
+import presentation_1 from '../../assets/images/presentation_1.png';
 const Presentation = () => {
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -17,17 +17,17 @@ const Presentation = () => {
     const slides = [
         {
             text: 'Внедрение привычек,  достижение целей, идей',
-            img: 'src/assets/images/presentation_1.png',
+            img: presentation_1,
             visible: true,
         },
         {
             text: 'Сообщество единомышленников + новые знакомства',
-            img: 'src/assets/images/presentation_1.png',
+            img: presentation_1,
             visible: screenWidth > 1085 && true,
         },
         {
             text: 'Раскрытие собственного потенциала + научиться чему-то новому',
-            img: 'src/assets/images/presentation_1.png',
+            img: presentation_1,
             visible: screenWidth > 1085 && true,
         },
     ]

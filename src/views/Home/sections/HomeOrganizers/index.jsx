@@ -1,4 +1,5 @@
 import { StyledHomeOrganizers, Container, Column, Title, Subtitle, Decor, Image } from "./styles/homeOrganizers.styled";
+import organizers from '../../../../assets/images/organizers.png'
 
 const HomeOrganizers = () => {
     return (
@@ -11,7 +12,7 @@ const HomeOrganizers = () => {
                     <Subtitle>
                         <Decor>Комфортная, удобная работа</Decor> со своей аудиторией  
                     </Subtitle>
-                    <Image src="src/assets/images/organizers.png"/>
+                    <Image src={organizers}/>
                 </Column>
             </Container>
         </StyledHomeOrganizers>

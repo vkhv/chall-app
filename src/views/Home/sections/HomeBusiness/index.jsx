@@ -1,5 +1,5 @@
 import { StyledHomeBusiness, Container, Inner, Title, Decor, Image } from './styles/homeBusiness.styled';
-
+import business from '../../../../assets/images/business.png';
 const HomeBusiness = () => {
     return (
         <StyledHomeBusiness>
@@ -9,7 +9,7 @@ const HomeBusiness = () => {
                         <Decor>Достичь бизнес-цели</Decor> или выполнить бизнес-план <Decor>своей командой</Decor>  
                     </Title>
                     <Image
-                        src="src/assets/images/business.png"
+                        src={business}
                     />
                 </Inner>
             </Container>

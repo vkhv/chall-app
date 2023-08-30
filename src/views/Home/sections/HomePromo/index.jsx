@@ -1,6 +1,7 @@
 import { StyledHomePromo, Container, Inner, Column, Title, Decor, Image } from "./styles/homePromo.styled";
 import { useState, useEffect } from 'react';
 import HomeButtons from "../HomeButtons";
+import promo from '../../../../assets/images/promo.png'
 
 const HomePromo = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -25,7 +26,7 @@ const HomePromo = () => {
                         </Title>
                         {screenWidth > 1085 && <HomeButtons />}
                     </Column>
-                    <Image src="src/assets/images/promo.png" />
+                    <Image src={promo} />
                     {screenWidth < 1085 && <HomeButtons />}
                 </Inner>
             </Container>

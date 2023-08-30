@@ -1,5 +1,7 @@
 import { StyledHomeExclude, Inner, Container, Column, Title, Decor, Text, Image } from './styles/homeExclude.styled';
 import { useState, useEffect } from 'react';
+import waves from '../../../../assets/images/waves.png'
+import exclude from '../../../../assets/images/exclude.png'
 
 const HomeExclude = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -19,7 +21,7 @@ const HomeExclude = () => {
             <Container>
                 <Inner>
                     <Column>
-                        {screenWidth > 1085 && <Image src='src/assets/images/waves.png' $marginBottom='13px'/>}
+                        {screenWidth > 1085 && <Image src={waves} $marginBottom='13px'/>}
                         <Title>
                             <Decor>Возможность исключения</Decor> неактивных участников без негатива 
                         </Title>
@@ -28,7 +30,7 @@ const HomeExclude = () => {
                         </Text>
                     </Column>
                     <Image 
-                        src='src/assets/images/exclude.png'
+                        src={exclude}
                         $width={screenWidth < 1085 ? '300px' : '630px'}
                     />
                 </Inner>
